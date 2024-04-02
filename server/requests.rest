@@ -1,0 +1,83 @@
+# POST http://localhost:3000/signin
+# Content-Type: application/json
+
+# {
+#     "email" : "person2@gmail.com",
+#     "password" : "Person2"
+# }
+
+# POST http://localhost:3000/create-blog
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNlNDFmMjJkNWYyYzM5YzY4ODA2NDIiLCJpYXQiOjE3MDgzOTM4ODh9.nI9SfnVtDkf1wd56IBGpcXSR96as3PFWNaibDzvz1rg
+
+# {
+#     "title": "test titlrg",
+#     "banner": "https://example.com/image-url",
+#     "des": "this is a short des",
+#     "content": {
+#         "blocks": [ 1 , 2 ]
+#     },
+#     "tags": ["tag1", "tag2"]
+# }
+
+# GET  http://localhost:3000/trending-blogs
+
+# POST http://localhost:3000/search-blogs
+# Content-Type: application/json
+
+# {
+#     "tag": "Tech"
+# }
+
+# POST http://localhost:3000/search-users
+# Content-Type: application/json
+
+# {
+#     "query": "person"
+# }
+
+
+# POST http://localhost:3000/get-profile
+# Content-Type: application/json
+
+# {
+#     "username": "person1"
+# }
+
+# POST http://localhost:3000/get-blog
+# Content-Type: application/json
+
+# {
+#     "blog_id": "Browse-with-Bing-is-ChatGPT-s-answer-to-Google-Bard-Tech1alwMbKOobqlNlGmPKnO9"
+# }
+
+# POST http://localhost:3000/get-profile
+# Content-Type: application/json
+
+# {
+#     "username" : "person2"
+# }
+
+# eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNlNDFmMjJkNWYyYzM5YzY4ODA2NDIiLCJpYXQiOjE3MDk0ODQ4MzJ9.4et2EDe9xtX1v62sXy7O-Xmd6kJSmKiVn2P7X-uWASs
+# POST http://localhost:3000/change-password
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNlNDFmMjJkNWYyYzM5YzY4ODA2NDIiLCJpYXQiOjE3MDgzOTM4ODh9.nI9SfnVtDkf1wd56IBGpcXSR96as3PFWNaibDzvz1rg
+
+# {
+#    "currentPassword":"Person2", 
+#    "newPassword":"newPerson2"
+# }
+
+# GET http://localhost:3000/new-notification
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNlNDFmMjJkNWYyYzM5YzY4ODA2NDIiLCJpYXQiOjE3MDk1MzUzNTN9.VTNchyqL5LEgm9NBO16oP0JN-i__js7ei6bn0L_TR8s
+
+
+POST  http://localhost:3000/user-written-blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWNlNDFmMjJkNWYyYzM5YzY4ODA2NDIiLCJpYXQiOjE3MDk1MzUzNTN9.VTNchyqL5LEgm9NBO16oP0JN-i__js7ei6bn0L_TR8s
+Content-Type: application/json
+
+{
+
+    "page": 1,
+    "draft": false
+}
