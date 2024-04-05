@@ -16,7 +16,7 @@ import Notification  from './Schema/Notification.js';
 import Comment from './Schema/Comment.js';
 
 const server = express();
-let PORT = 3000;
+let PORT = process.env.PORT || 3000 ;
 
 //initializing firebase --> admin connection to firebase frontend
 admin.initializeApp({
