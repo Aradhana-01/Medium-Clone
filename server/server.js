@@ -107,6 +107,9 @@ const generateUsername = async(email) => {
 //     })
 // })
 //signup route
+server.get("/all", (req,res) => {
+    res.end("<h1>Welcome to ContentsHub</h1>");
+})
 server.post('/signup',  (req,res) => {
    
     const {fullname, email, password} = req.body;
